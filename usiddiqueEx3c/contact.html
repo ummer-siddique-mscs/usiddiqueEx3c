@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	
+	<title>Cineplot - Contact Us</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/stylish.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<span class="title">Cineplot.com</span>
+			<span class="tagline">Your one stop resource<br>
+				on Indian/Pakistani Films!</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="profiles.html">Profiles</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </li>
+        <li><a href="contact.html">Contact</a></li> 
+      </ul>
+  
+    </div>
+  </div>
+</nav> 
+</header>
+
+<main id="main">
+
+	<div class="container">
+		   <section>
+      <h1>Contact Us</h1>
+      <p>Comments? Suggestions? Please contact us by filling in the form below -</p>
+      <p>Required values are marked by an asterisk (*)</p>
+       <form id="survey"  form method="post" action="https://littlelightmedia.com/test.php">
+  <fieldset id="custInfo">
+  
+  <legend>Visitor Information</legend>
+  
+  <div class="formRow">
+  <label for="name">Name*</label>
+  <input name="custName" id="name" type="text" placeholder="first and last name" required/>
+  </div>
+  
+    <div class="formRow">
+  <label for="street">Street address</label>
+  <input name="custStreet" id="street" type="text" />
+    </div>
+  
+      <div class="formRow">
+    <label for="city">City</label>
+  <input name="custCity" id="city" type="text" />
+      </div>
+      
+        <div class="formRow">
+      <label for="state">State</label>
+  <input name="custState" id="state" type="text" />
+       </div>
+       
+        <div class="formRow">
+        <label for="zip">Postal  code</label>
+  <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+  pattern="^\d{5}(-\d{4})?$" />
+   </div>
+   
+    <div class="formRow">
+        <label for="phone">Phone number</label>
+  <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+     </div>
+     
+     <div class="formRow">
+        <label for="mail">E-mail*</label>
+  <input name="custEmail" id="mail" type="email" required/>
+    </div>
+    
+     <div class="formRow">
+        <label for="websiteUrl">Your website URL (if any) starting with htt://p</label>
+  <input name="custUrl" id="websiteUrl" type="url"
+   pattern="https?://.+" />
+    </div>
+    
+  </fieldset>
+  
+  
+   <fieldset id="expInfo">
+     <legend>Share Your Experience</legend>
+     
+        <div class="formRow">
+         <label for="visit">Date of visit</label>
+  <input name="visitDate" id="visit" type="date" />
+    </div>
+    
+    <div class="formRow">
+         <label for="order">Where did you hear about us? (Choose One)</label>
+  <select name="hearType" id="hear" />
+  <option value="internet" selected> Internet</option>
+           <option value="mag"> Magazine</option>
+              <option value="news"> Newspaper</option>
+                 <option value="word"> Word of Mouth</option>
+                    <option value="other"> Other</option>
+     </select>
+    </div>
+    
+    <div class="formRow">
+    <label for="entertainSpin">Approximately what percentage of your income is spent on entertainment each month?</label>
+    <input name="entertain" id="entertainSpin" type ="number"
+            value ="4" step ="4" min ="0" max ="20" /> %
+    </div>
+    
+    <div class="formRow">
+    <label for="rangeBox">Rate the overall service you received at Cineplot Website<br />
+            (0=poor; 10=great)</label>
+    0
+    <input name="serviceRate" id="rangeBox" type="range"
+         value="5" step=1" min="0" max="10" />
+    10
+    </div>   
+      
+     <div class="formRow">
+     <label for="painting">What's your favorite iconic Surrealistic painting?</label>
+     <input name="favPainting" id="painting" type ="text" list="iconicPaintings" />
+     <datalist id ="iconicPaintings">
+     <option value="The Persistence of Memory" />
+     <option value="Metamorphosis Of Narcissus" />
+     <option value="The Son of Man" />
+     <option value="This Is Not a Pipe" />
+     <option value="The Red Tower" />
+     <option value="The Elephant Celebes" />
+     <option value="Reply to Red" />
+     </datalist>
+     </div>
+                      
+  </fieldset>
+  
+  <div id="buttons">
+  <input type="submit" value="Submit My Survey" />
+  <input type="reset" value="Cancel" />
+  </div>
+  </form>
+
+     
+   </section>
+
+	
+
+	</div>	<!-- /container -->
+
+</main>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2018, Cineplot.com<br> 
+						</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
